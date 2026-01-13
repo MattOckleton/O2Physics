@@ -99,7 +99,7 @@ namespace o2::aod
   DECLARE_SOA_TABLE_STAGED(JetDataTables, "JETDATATABLE",
                     o2::soa::Index<>,
                     jets::D0DataTableId,
-                    jets::CollID,
+                    jets::CollID, // change to index column
                     jets::JetPt,
                     jets::JetEta,
                     jets::JetPhi,
@@ -107,8 +107,8 @@ namespace o2::aod
 
   DECLARE_SOA_TABLE_STAGED(JetMCPTables, "JETMCPARTICLELEVELTABLE",
                     o2::soa::Index<>,
-                    jets::D0DataTableId,
-                    jets::CollID,
+                    jets::D0McPTableId,
+                    jets::CollID, // change to index column
                     jets::JetPt,
                     jets::JetEta,
                     jets::JetPhi,
@@ -116,8 +116,8 @@ namespace o2::aod
 
   DECLARE_SOA_TABLE_STAGED(JetMCMatchedTables, "JETMCMATCHEDTABLE",
                     o2::soa::Index<>,
-                    jets::D0DataTableId,
-                    jets::CollID,
+                    jets::D0McMatchedTableId,
+                    jets::CollID, // change to index column
                     jets::JetPt,
                     jets::JetEta,
                     jets::JetPhi,
